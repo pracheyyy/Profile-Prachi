@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Prachi Patil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* ---------- RESET ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.7;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      padding: 24px 80px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* ---------- MAIN CONTAINER ---------- */
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    /* ---------- HERO TEXT ---------- */
+    .intro {
+      max-width: 700px;
+      margin-bottom: 70px;
+    }
+
+    h1 {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* ---------- SECTION ---------- */
+    section {
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-left: 4px solid #111;
+      padding-left: 14px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 16px;
+      max-width: 800px;
+    }
+
+    /* ---------- SKILLS GRID ---------- */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      padding: 20px;
+      border: 1px solid #e6e6e6;
+      border-radius: 14px;
+    }
+
+    .skill-box h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .skill-box span {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      margin-top: 50px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 999px;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cta a:hover {
+      background-color: #000;
+      transform: translateY(-2px);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      margin-top: 100px;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">← Back to Home</a>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- INTRO -->
+    <div class="intro">
+      <h1>About Me</h1>
+      <p class="subtitle">
+        I’m Prachi Patil — a developer who enjoys blending
+        <strong>problem-solving</strong> with
+        <strong>clean, user-centric design</strong>.
+      </p>
+    </div>
+
+    <!-- SECTION: WHO I AM -->
+    <section>
+      <h2>Who I Am</h2>
+      <p>
+        I am a second-year B.Tech Information Technology student with a strong
+        academic record and a deep interest in software development. I enjoy
+        building meaningful digital experiences that balance logic, performance,
+        and usability.
+      </p>
+      <p>
+        My approach to technology is practical — I focus on understanding
+        problems deeply and then designing solutions that are efficient,
+        scalable, and intuitive.
+      </p>
+      <p>
+        I actively practice data structures and algorithms, work on real-world
+        projects, and explore frontend design to strengthen both my technical
+        and creative skills.
+      </p>
+    </section>
+
+    <!-- SECTION: SKILLS -->
+    <section>
+      <h2>Skills & Tools</h2>
+
+      <div class="skills">
+        <div class="skill-box">
+          <h3>Programming</h3>
+          <span>C, C++, Python</span>
+        </div>
+
+        <div class="skill-box">
+          <h3>Core CS</h3>
+          <span>DSA, OOP, OS, Computer Networks</span>
+        </div>
+
+        <div class="skill-box">
+          <h3>Web</h3>
+          <span>HTML, CSS, JavaScript</span>
+        </div>
+
+        <div class="skill-box">
+          <h3>Design</h3>
+          <span>UI/UX Design, Graphic Design</span>
+        </div>
+
+        <div class="skill-box">
+          <h3>Tools</h3>
+          <span>Git, GitHub, VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="PRACHI PATIL resume.pdf" target="_blank">View Resume</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Prachi Patil
+  </footer>
+
+</body>
+</html>

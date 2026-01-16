@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Prachi Patil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 80px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    /* GitHub section */
+    .github {
+      margin-bottom: 50px;
+    }
+
+    .github a {
+      display: inline-block;
+      padding: 10px 22px;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .github a:hover {
+      background-color: #000;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      border: 1px solid #e5e5e5;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .project-card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .project-card span {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #111;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">← Back to Home</a>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <h1>Projects</h1>
+    <p class="subtitle">
+      A selection of projects that showcase my problem-solving skills,
+      development experience, and design thinking.
+    </p>
+
+    <!-- GitHub -->
+    <section class="github">
+      <a href="https://github.com/pracheyyy" target="_blank">
+        View my GitHub
+      </a>
+    </section>
+
+    <!-- Projects List -->
+    <section class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h2>Ikigai-Based Mental Health & Productivity Correlator</h2>
+        <p>
+          A web application prototype designed to analyze lifestyle patterns
+          and correlate stress and productivity indicators, focusing on early
+          burnout detection and work–life balance.
+        </p>
+        <span>Tech: HTML, CSS, JavaScript, Flask, Python, Pandas</span><br>
+        <a href="https://github.com/pracheyyy/IKAGAI-project.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h2>Smart Traffic Management System</h2>
+        <p>
+          An AI-driven traffic management solution designed to optimize
+          congestion handling and prioritize emergency vehicles in urban areas.
+        </p>
+        <span>Tech: Python, Computer Vision (YOLO), System Design</span><br>
+        <a href="https://github.com/pracheyyy/dynamic-traffic-management-system.git" target="_blank">View on GitHub</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Prachi Patil
+  </footer>
+
+</body>
+</html>
