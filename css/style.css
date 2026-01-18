@@ -90,16 +90,15 @@ body {
 
 /* ================== HERO SECTION ================== */
 .hero {
-  min-height: 100vh;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  padding: 0 60px;
+  padding: 60px 60px;          /* vertical padding added */
+  min-height: 520px;           /* controlled height (IMPORTANT) */
 
   background-image: url("../assets/images/profile.jpeg");
-  background-size: 90%;              /* image slightly smaller */
+  background-size: 90%;        /* balanced size */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -152,6 +151,7 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
 
 /* ================== EDUCATION SECTION ================== */
 
@@ -353,9 +353,9 @@ body {
 /* ================== EXPERIENCE IMAGE GALLERY ================== */
 
 .experience-gallery {
-  padding: 30px 40px 80px; /* very small side padding */
-  background-color: #ffffff;
+  padding: 30px 40px 60px; /* reduce bottom space */
 }
+
 
 
 .gallery-grid {
@@ -401,5 +401,218 @@ body {
   .gallery-item {
     height: 220px;
   }
+}
+
+
+/* ================== SKILLS SECTION ================== */
+
+.skills {
+  padding: 60px 120px 120px; /* reduced TOP padding */
+  background-color: #ffffff;
+}
+
+
+.skills h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: #111;
+  margin-top: 0;
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+}
+
+/* Card */
+.skill-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #ffffff;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Title */
+.skill-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+/* List */
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card li {
+  font-size: 15px;
+  color: #444;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+/* ================== RESPONSIVE ================== */
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 90px 20px;
+  }
+
+  .skills h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== PROJECTS ===== */
+
+.projects-section {
+  padding: 60px 100px;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+/* Left Content */
+.project-text {
+  flex: 1.2;
+}
+
+.project-text h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.project-text p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-text ul {
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.project-text li {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.completed {
+  border: 1px solid #111;
+}
+
+.prototype {
+  border: 1px dashed #555;
+}
+
+/* Link */
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+
+/* Right Image */
+.project-image {
+  flex: 0.8;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects-section {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* ===== SECTION SPACING FIX ===== */
+
+section {
+  padding: 60px 100px;
+  margin: 0;
+}
+
+.projects-section {
+  padding-top: 30px;
+}
+
+.section-title {
+  margin-top: 0;
 }
 
